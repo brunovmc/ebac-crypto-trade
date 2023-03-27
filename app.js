@@ -1,11 +1,13 @@
-require('dotenv').config()
+require("dotenv").config();
 
-const createError = require('http-errors');
-const express = require('express');
+const createError = require("http-errors");
+const express = require("express");
 
-const { logger } = require('./utils');
-const { connect } = require('./models');
-const router = require('./routes');
+const { logger } = require("./utils");
+const { connect } = require("./models");
+const router = require("./routes");
+
+const status = require("./routes/v1/status");
 
 const app = express();
 
@@ -14,15 +16,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // declarando rotas
-app.use('/', router);
+app.use("/", router);
+app.use("/status", status);
 
 // caso nenhuma rota de match, redireciona para a 404
-app.use(function(_req, _res, next) {
+app.use(function (_req, _res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, _req, res, _next) {
+app.use(function (err, _req, res, _next) {
   res.status(err.status || 500);
   res.json({
     sucesso: false,
