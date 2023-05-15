@@ -12,7 +12,7 @@ passport.use(
     },
     async (jwtPayload, done) => {
       try {
-        const Usuario = await Usuario.findById(jwtPayload.id);
+        const usuario = await Usuario.findById(jwtPayload.id);
         done(null, usuario);
       } catch (e) {
         done(e);
