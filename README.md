@@ -27,3 +27,15 @@ Copie o arquivo `.env.example` para um arquivo `.env` na raíz do projeto e subs
 Para desenvolvimento execute o comando `npm run dev` para iniciar o servidor com o nodemon.
 
 Para produção execute o comando `npm start`.
+
+### Thunder Client
+
+Uma collection do thunderclient com as devidas chamadas nas rotas para as seguintes funcoes:
+- Registro de Usuario
+- Login
+- Perfil
+- Consulta Depositos
+- Cria Deposito
+- Cancela Deposito
+- Cria Saque
+- Consultar Saques
