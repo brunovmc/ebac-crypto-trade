@@ -32,4 +32,26 @@ router.post("/", async (req, res) => {
   }
 });
 
+router.put("/:depositoId/cancelar", async (req, res) => {
+  try {
+    const depositoId = req.params.depositoId;
+    const usuario = req.user;
+
+    const deposito = usuario.depositos.id(depositoId);
+
+    if (!deposito) {
+      return res.status(404).json({ error: "Deposito nao encontrado" });
+    }
+
+    deposito.status = false;
+
+    await usuario.save();
+
+    res.json(deposito);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
 module.exports = router;

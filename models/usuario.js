@@ -24,6 +24,15 @@ const DepositoSchema = new Schema({
     type: Date,
     required: true,
   },
+  status: {
+    type: Boolean,
+    default: true,
+  },
+});
+
+//definindo uma propriedade virtual para status
+DepositoSchema.virtual("statusText").get(function () {
+  return this.status ? "confirmado" : "cancelado";
 });
 
 const UsuarioSchema = new Schema({

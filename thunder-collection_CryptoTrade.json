@@ -1,0 +1,181 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "CryptoTrade",
+    "dateExported": "2023-05-17T16:43:58.603Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d73ee576-5f8c-414e-9c78-39874fb3bf44",
+            "colId": "3163e619-d006-4e09-8d8c-2f2c59b33e9e",
+            "containerId": "",
+            "name": "Registro de Usuario",
+            "url": "http://localhost:3000/v1/usuarios",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-27T15:35:31.408Z",
+            "modified": "2023-05-15T17:48:37.938Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"usuario\": {\n    \"email\": \"teste2@teste.com.br\",\n    \"cpf\": \"403.432.350-72\",\n    \"nome\": \"Bruno2\",\n    \"senha\": \"blablabla2\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "21b34831-89ba-404b-b85c-94c9fc39d5fd",
+            "colId": "3163e619-d006-4e09-8d8c-2f2c59b33e9e",
+            "containerId": "",
+            "name": "Perfil",
+            "url": "http://localhost:3000/v1/usuarios/me",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-27T18:00:25.968Z",
+            "modified": "2023-05-17T16:42:19.220Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjI3MDc1YjhhMTM0MzQ5MGQxNTk1MCIsImlhdCI6MTY4NDM0MTcwMX0.bilT14Wasi3_PF-8JGTsDy7no26VgJcNuVgkXdgwgq0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5a18e6db-e116-4736-8181-174bb10863ff",
+            "colId": "3163e619-d006-4e09-8d8c-2f2c59b33e9e",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:3000/v1/auth",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-03-27T18:16:00.675Z",
+            "modified": "2023-05-15T17:48:47.534Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"teste2@teste.com.br\",\n  \"senha\":\"blablabla2\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c551e0b8-8e79-4b89-9369-aeb98e87018b",
+            "colId": "3163e619-d006-4e09-8d8c-2f2c59b33e9e",
+            "containerId": "",
+            "name": "Consulta Depositos",
+            "url": "http://localhost:3000/v1/depositos",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-03-27T23:35:12.063Z",
+            "modified": "2023-05-17T16:42:05.173Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjI3MDc1YjhhMTM0MzQ5MGQxNTk1MCIsImlhdCI6MTY4NDM0MTcwMX0.bilT14Wasi3_PF-8JGTsDy7no26VgJcNuVgkXdgwgq0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8ab76e5e-af93-4089-9d72-42c129e71c2f",
+            "colId": "3163e619-d006-4e09-8d8c-2f2c59b33e9e",
+            "containerId": "",
+            "name": "CriaDeposito",
+            "url": "http://localhost:3000/v1/depositos",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-05-15T18:10:47.039Z",
+            "modified": "2023-05-17T16:31:39.079Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjI3MDc1YjhhMTM0MzQ5MGQxNTk1MCIsImlhdCI6MTY4NDM0MTA4NH0._fTlxbzRmUB_vxC7XaRbrJID6kF9pMC4GHeYZkVXOZA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"valor\": 1234\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0a402114-b56c-42a0-afc9-8e7741d070a9",
+            "colId": "3163e619-d006-4e09-8d8c-2f2c59b33e9e",
+            "containerId": "",
+            "name": "Consultar Saques",
+            "url": "http://localhost:3000/v1/saques",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-05-15T19:44:41.676Z",
+            "modified": "2023-05-15T19:45:36.826Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjI3MDc1YjhhMTM0MzQ5MGQxNTk1MCIsImlhdCI6MTY4NDE3OTgwNH0.ztodd5QzCMBayvzl2B9CC2-lCRfQO65F6QyJrpdajnk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f741c975-bd3b-4d4e-8db6-1e761b7e9460",
+            "colId": "3163e619-d006-4e09-8d8c-2f2c59b33e9e",
+            "containerId": "",
+            "name": "Cria Saques",
+            "url": "http://localhost:3000/v1/saques",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-05-15T19:45:57.046Z",
+            "modified": "2023-05-15T19:47:12.378Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjI3MDc1YjhhMTM0MzQ5MGQxNTk1MCIsImlhdCI6MTY4NDE3OTgwNH0.ztodd5QzCMBayvzl2B9CC2-lCRfQO65F6QyJrpdajnk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"valor\": 10\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "949fa3c6-37f2-4dea-acc7-e05faf3f996e",
+            "colId": "3163e619-d006-4e09-8d8c-2f2c59b33e9e",
+            "containerId": "",
+            "name": "CancelaDeposito",
+            "url": "http://localhost:3000/v1/depositos/6465016b6347c90e1f616ac5/cancelar",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2023-05-17T16:17:26.761Z",
+            "modified": "2023-05-17T16:43:28.514Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjI3MDc1YjhhMTM0MzQ5MGQxNTk1MCIsImlhdCI6MTY4NDM0MTQzNH0.WGzrUFK-_yuuabAcKDuWVetXkGLOPV7laV0P6qXQSK0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
