@@ -6,12 +6,14 @@ const usuariosRouter = require("./usuarios");
 const authRouter = require("./auth");
 const depositosRouter = require("./depositos");
 const saquesRouter = require("./saques");
+const cotacoesRouter = require("./cotacoes");
 
 const router = express.Router();
 
 router.use("/status", statusRouter);
 router.use("/usuarios", usuariosRouter);
 router.use("/auth", authRouter);
+router.use("/cotacoes", cotacoesRouter);
 router.use(
   "/depositos",
   passport.authenticate("jwt", { session: false }),

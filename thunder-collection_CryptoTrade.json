@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "CryptoTrade",
-    "dateExported": "2023-05-17T16:43:58.603Z",
+    "dateExported": "2023-05-18T14:01:03.340Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -38,11 +38,11 @@
             "method": "GET",
             "sortNum": 20000,
             "created": "2023-03-27T18:00:25.968Z",
-            "modified": "2023-05-17T16:42:19.220Z",
+            "modified": "2023-05-17T16:49:11.800Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjI3MDc1YjhhMTM0MzQ5MGQxNTk1MCIsImlhdCI6MTY4NDM0MTcwMX0.bilT14Wasi3_PF-8JGTsDy7no26VgJcNuVgkXdgwgq0"
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjI3MDc1YjhhMTM0MzQ5MGQxNTk1MCIsImlhdCI6MTY4NDM0MjAyOX0.83mwu-ByhZPYszfAweiEeG_RgzM7jSgYYuilgSr4i7A"
                 }
             ],
             "params": [],
@@ -81,11 +81,11 @@
             "method": "GET",
             "sortNum": 40000,
             "created": "2023-03-27T23:35:12.063Z",
-            "modified": "2023-05-17T16:42:05.173Z",
+            "modified": "2023-05-17T16:47:33.381Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjI3MDc1YjhhMTM0MzQ5MGQxNTk1MCIsImlhdCI6MTY4NDM0MTcwMX0.bilT14Wasi3_PF-8JGTsDy7no26VgJcNuVgkXdgwgq0"
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjI3MDc1YjhhMTM0MzQ5MGQxNTk1MCIsImlhdCI6MTY4NDM0MjAyOX0.83mwu-ByhZPYszfAweiEeG_RgzM7jSgYYuilgSr4i7A"
                 }
             ],
             "params": [],
@@ -163,17 +163,31 @@
             "colId": "3163e619-d006-4e09-8d8c-2f2c59b33e9e",
             "containerId": "",
             "name": "CancelaDeposito",
-            "url": "http://localhost:3000/v1/depositos/6465016b6347c90e1f616ac5/cancelar",
+            "url": "http://localhost:3000/v1/depositos/6464fe053e0b17acfe08fa90/cancelar",
             "method": "PUT",
             "sortNum": 100000,
             "created": "2023-05-17T16:17:26.761Z",
-            "modified": "2023-05-17T16:43:28.514Z",
+            "modified": "2023-05-17T16:48:51.223Z",
             "headers": [
                 {
                     "name": "Authorization",
                     "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NjI3MDc1YjhhMTM0MzQ5MGQxNTk1MCIsImlhdCI6MTY4NDM0MTQzNH0.WGzrUFK-_yuuabAcKDuWVetXkGLOPV7laV0P6qXQSK0"
                 }
             ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dfbf09ec-671e-4a1d-b332-aae593c01c25",
+            "colId": "3163e619-d006-4e09-8d8c-2f2c59b33e9e",
+            "containerId": "",
+            "name": "Cotacoes",
+            "url": "http://localhost:3000/v1/cotacoes",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-05-18T13:21:48.894Z",
+            "modified": "2023-05-18T13:25:28.111Z",
+            "headers": [],
             "params": [],
             "tests": []
         }
