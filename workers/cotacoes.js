@@ -6,7 +6,7 @@ const cotacoesWorker = async (job, done) => {
   try {
     logger.info(
       `buscando cotacoes.. Tentativa ${job.attemptsMade + 1}/${
-        job.opts.attemps
+        job.opts.attempts
       }`
     );
 
