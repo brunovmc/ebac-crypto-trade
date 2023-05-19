@@ -6,9 +6,12 @@ const passport = require("passport");
 
 const { logger } = require("./utils");
 const { connect } = require("./models");
+const { agendaTarefas } = require("./workers");
 const router = require("./routes");
 
 const status = require("./routes/v1/status");
+
+agendaTarefas();
 
 const app = express();
 
