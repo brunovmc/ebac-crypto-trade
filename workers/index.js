@@ -6,7 +6,8 @@ const cotacoesQueue = new Queue("busca-cotacoes", process.env.REDIS_URL);
 
 cotacoesQueue.process(cotacoesWorker);
 
-const agendaTarefas = () => {
+const agendaTarefas = async () => {
+  await cotacoesQueue.clean();
   cotacoesQueue.add({}, { repeat: { cron: "0/15 * * * *" } });
 };
 
